@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+            #div1,#div2{
+                width: 50%;
+                height: 500px;
+                
+            }
+            #para1{
+                margin: 180px;
+                margin-bottom:0px;
+            }
+            #para2{
+                margin-left: 183px;
+            }
+
+            #l1{
+                position: relative;
+                top: 48px;
+                left: 50px;
+            }
+            #name{
+                position: relative;
+                top: 48px;
+                left: 162px;
+                width: 227px;
+            }
+            /* #div3{
+                height: 400px;
+                width: 50px;
+            }
+            #div4{
+                height: 400px;
+            } */
+            /* #row1{
+                width: 486px;
+            } */
+            #user2{
+                position: relative;
+                top: 52px;
+                left: 50px;
+            }
+            #user{
+                position: relative;
+                top: 52px;
+                left: 134px;
+                width: 227px;
+            }
+
+            #email2{
+                position: relative;
+                top: 58px;
+                left: 50px;
+            }
+            #email{
+                position: relative;
+                top: 58px;
+                left: 168px;
+                width: 227px;
+            }
+            
+            #pass2{
+                position: relative;
+                top: 62px;
+                left: 50px;
+            }
+            #pass{
+                position: relative;
+                top: 62px;
+                left: 140px;
+                width: 227px;
+            }
+
+            #cnf2{
+                position: relative;
+                top: 66px;
+                left: 50px;
+                
+            }
+            #cnf{
+                position: relative;
+                top: 66px;
+                left: 80px;
+                width: 227px;
+            }
+
+            #gen{
+                position: relative;
+                top: 70px;
+                left: 50px;
+
+            }
+
+            #btn1{
+                float: right;
+                position: relative;
+                top: 90px;
+                right: 40px;
+                width: 200px;
+                height: 45px;
+            }
+
+            #dots{
+                position: relative;
+                top: 70px;
+                left: 150px;
+                
+            }
+
+            #p1{
+                position: relative;
+                top: 90px;
+                left: 50px;
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="d-flex flex-row flex-wrap bg-warning m-5">
+            <div  id="div1" class="border-end-0  ">
+                <p class="display-1 fw-bold" id="para1">Register!</p>
+                <p class="" id="para2">Connect With Us...</p><br>
+            </div>
+            <div id="div2" class="border-start border-2 border-dark">
+          
+                <form action="">
+                    <div class="m-2">
+                            <label for="name" id="l1" >Name</label><input type="text" id="name" placeholder="Enter your name" class="border border-1 border-dark rounded-1"><br><br>
+                            <label for="User" id="user2">Username</label><input type="text" id="user" placeholder="Enter your username" class="border border-1 border-dark rounded-1"><br><br>
+                            
+                            <label for="email" id="email2">Email</label><input type="email" id="email" placeholder="Enter your email" class="border border-1 border-dark rounded-1"><br><br>
+                            
+                            <label for="pass" id="pass2">Password</label><input type="password" id="pass" placeholder="Enter your password" class="border border-1 border-dark rounded-1"><br><br>
+                            <label for="cnf" id="cnf2" >Confirm Password</label><input type="password" id="cnf" placeholder="confirm your password" class="border border-1 border-dark rounded-1"><br><br>
+                            
+                            <label for="gender" id="gen">Gender</label>
+                            <span id="dots">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>&nbsp;&nbsp;
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>&nbsp;&nbsp;
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </span>
+                            <div class="ms-5 mt-3"><button type="button" class="btn btn-success btn-outline-dark p-1 ms-5 fs-5 fw-bold " id="btn1">Sign Up</button></div>
+                            <p class="fs-6" id="p1">Already have an account?<a href="{% url 'login' %}">Sign In</a></p>
+                    </div>  
+                            
+                            
+                           
+                            
+                          
+                </form>
+         
+
+            </div>
+        </div>
+        
+    </body>
+</html>
