@@ -39,4 +39,4 @@ def employee(request):
     return render(request,"employees.html",{"employee_list":employee})
 
 def home(request):
-    return render(request,"home.html")
+    return render(request,"index.html")
